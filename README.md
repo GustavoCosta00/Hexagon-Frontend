@@ -54,7 +54,7 @@ Adicione sempre imagens relativamente grandes dentro do sistema para que não oc
   className="w-full h-64 object-cover"/>
 ```
 
-Esse **formats?.medium...** ele só encontra esse medim caso a imagem seja grande, caso contrário dentro de formats ele vai criar apenas um campo chamado tumbNail.
+Esse **formats?.medium...** ele só encontra esse medium caso a imagem seja grande, caso contrário dentro de formats ele vai criar apenas um campo chamado tumbNail.
 
 Nas imagens é necessário usar **base_url** pois na requisição ele não trás a url completa da imagem
 
