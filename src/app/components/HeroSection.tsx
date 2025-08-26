@@ -25,7 +25,7 @@ function resolveImageUrl(base: string, mediaField: any): string | null {
 
 const HeroSection = async () => {
   const posts = await getHeroSection();
-  const base_url = process.env.STRAPI_URL ?? "http://127.0.0.1:1337";
+  const base_url:any = process.env.STRAPI_URL;
 
   // pega o item home-page (defensivo)
   const homeItem = posts?.data?.[1] ?? posts?.data ?? null;

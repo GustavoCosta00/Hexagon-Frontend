@@ -2,7 +2,7 @@ import { getBanner } from "@/lib/strapi";
 
 export default async function Banner() {
   const posts = await getBanner();
-  const base_url = "http://localhost:1337";
+  const base_url = process.env.STRAPI_URL;
 
   // Dados do banner
   const homeData = posts.data;
