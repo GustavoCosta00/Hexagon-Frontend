@@ -3,7 +3,7 @@ import { getHeroMainSection } from "@/lib/strapi";
 
 const HeroMainSection = async () => {
   const mainSection = await getHeroMainSection();
-  const base_url = process.env.STRAPI_URL ?? "http://127.0.0.1:1337";
+  const base_url = process.env.STRAPI_URL;
 
   // PEGA OS DADOS INICIAIS SOBRE A HERO MAIN SECTION
   const getMainSection = mainSection.data.Home[0]
